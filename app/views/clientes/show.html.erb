@@ -1,0 +1,20 @@
+<%content_for :submenu do%>
+		<a href="/clientes/new">Novo Cliente</a>
+<%end%>
+<div id="content">
+	<div id="table">
+		<table border="0" cellspacing="5" cellpadding="5">
+			<tr>
+			<% if !@cliente.blank? %>
+			    <tr>
+					<td>Nome:</td><td><%= @cliente.nome %></td>
+				</tr>
+				<tr>
+ 					<td>CPF:</td><td><%= @cliente.cpf %></td>
+				</tr>
+			<% end %>
+			
+			
+		</table>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+<div id="content">
+	<div id="form">
+			<%= form_tag :action => 'create', do %>
+		<fieldset id="" class="">
+		
+				<label> Nome: <%= text_field :cliente, :nome  %> </label>	
+				<label>E-mail: <%= text_field :cliente, :email %> </label>
+			<label>	CPF: <%= text_field :cliente, :cpf %> </label>
+			<label>	Telefone: <%= text_field :telefone, :numero %> </label>
+			<label>	Logradouro: <%= text_field :endereco, :logradouro %> </label>
+			<label>	CEP: <%= text_field :endereco, :cep %> </label>
+			<label>	País: <%= select :endereco, :pais_id, "<option value='1'>Brasil</option>" %></label>
+			<label>	Cidade: <%= select :endereco, :cidade_id, "<option value=1'>Brasilia</option> "%> </label>
+			<label>	Bairro: <%= select :endereco, :bairro_id, "<option value='1'>Centro</option>" %> </label>
+
+				<%= submit_tag "Cadastrar", :class => 'botao' %>
+		
+		
+		</fieldset>
+			<% end %>
+	
+	</div>
+</div>

@@ -1,0 +1,74 @@
+body{ font-family:Tahoma; }
+body > #wrap {height: auto; min-height: 100%;}
+#header{
+	height:85px;
+	background-color:#5F9EA0;
+}
+
+#menu {
+	background-color:#66CDAA;
+	height:auto;
+}
+
+
+
+#main {padding-bottom: 40px;}
+
+a:link,a:visited,a:hover {
+	text-decoration:none;
+	color:#000000;
+}
+
+#menu a:hover{
+	background-color:#5F9EA0;
+	
+}
+
+#menu ul li{
+  display: none;
+}
+
+#sistem_dados{
+	text-align:right;
+}
+form {
+	width:750px;
+	margin:20px;
+	margin:auto;
+	
+}
+
+
+fieldset{
+	border:none;
+	width:750px;
+}
+
+form fieldset label {
+	font:20px arial, tahoma, sans-serif;
+	display:block;
+	width:240px;
+	float:left;
+}
+
+form fieldset label input {
+	width:220px;
+	border:1px solid;
+	padding:3px;
+}
+
+form fieldset label select {
+	width:220px;
+	padding:3px;
+}
+
+form fieldset input.botao {
+	float:right;
+	margin:20px 40px;
+	border:1px solid #000;
+	background:#FFF;
+	color:#000;
+	padding:5px;
+	font:13px verdana, arial, tahoma, sans-serif;
+	cursor:pointer;
+}

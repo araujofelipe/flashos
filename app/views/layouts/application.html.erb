@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flashos</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+		</div>
+		<div id="menu">
+			<a href="/clientes">Clientes</a>
+		</div>
+		<div id="submenu">
+			<%= yield :submenu %>
+		</div>
+		<div id="sistem_dados">
+			Olá, Administrador! <a href='#'>Sair</a>
+		</div>
+		<div id="notice">
+			<%= flash[:notice] %>
+		</div>
+		<div id="main">
+			<%= yield%>
+		</div>
+	</div>
+	<div id="footer">
+	</div>
+</body>
+
+</html>

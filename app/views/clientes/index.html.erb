@@ -1,0 +1,25 @@
+<%content_for :submenu do%>
+		<a href="/clientes/new">Novo Cliente</a>
+<%end%>
+<div id="content">
+	<div id="table">
+		
+		<table border="0" cellspacing="5" cellpadding="5">
+			<tr><th>Nome</th><th>CPF</th><th colspan=2>Ação</th></tr>
+			<% if !@clientes.blank? %>
+			  <% for c in @clientes %>
+			    <tr>
+					<td><%= c.nome %></td>
+					<td><%= c.cpf %></td>
+					<td><%= link_to "Detalhes", c %></td>
+					<td><%= link_to "Excluir",  c, :method => :delete, :confirm => "Está certo disto?" %></td>
+				</tr>
+			  <% end %>
+			<% else %>
+			  
+			<% end %>
+			
+			
+		</table>
+	</div>
+</div>
