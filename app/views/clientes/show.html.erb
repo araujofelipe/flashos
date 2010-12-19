@@ -12,6 +12,9 @@
 				<tr>
  					<td>CPF:</td><td><%= @cliente.cpf %></td>
 				</tr>
+				<tr>
+					<td>Telefones:</td><td><% for t in @cliente.telefones %><%= t.numero %><br /><%end%></td>
+				</tr>
 			<% end %>
 			
 			

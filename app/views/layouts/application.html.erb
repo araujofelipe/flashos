@@ -20,7 +20,7 @@
 			Olá, Administrador! <a href='#'>Sair</a>
 		</div>
 		<div id="notice">
-			<%= flash[:notice] %>
+			<%= yield :notice %>
 		</div>
 		<div id="main">
 			<%= yield%>

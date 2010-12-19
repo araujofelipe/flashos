@@ -1,0 +1,29 @@
+<%content_for :submenu do%>
+		<a href="/clientes/new">Novo Cliente</a>
+<%end%>
+<%= content_for :notice do %>
+	<%= error_messages_for :cliente %>
+<%end%>
+<div id="content">
+	<div id="form">
+			<%= form_tag :action => 'create', do %>
+		<fieldset id="" class="">
+		
+			<label> Nome: <%=h text_field :cliente, :nome  %> </label>	
+			<label>E-mail: <%=h text_field :cliente, :email %> </label>
+			<label>	CPF: <%=h text_field :cliente, :cpf %> </label>
+			<label>	Telefone: <%=h text_field :telefone, :numero %> </label>
+			<label>	Logradouro: <%= text_field :endereco, :logradouro %> </label>
+			<label>	CEP: <%= text_field :endereco, :cep %> </label>
+			<label>	País: <%= select :endereco, :pais_id, "<option value='1'>Brasil</option>" %></label>
+			<label>	Cidade: <%= select :endereco, :cidade_id, "<option value=1'>Brasilia</option> "%> </label>
+			<label>	Bairro: <%= select :endereco, :bairro_id, "<option value='1'>Centro</option>" %> </label>
+
+				<%= submit_tag "Cadastrar", :class => 'botao' %>
+		
+		
+		</fieldset>
+			<% end %>
+	
+	</div>
+</div>

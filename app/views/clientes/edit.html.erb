@@ -6,7 +6,7 @@
 <%end%>
 <div id="content">
 	<div id="form">
-			<%= form_tag :action => 'create' do %>
+			<%= form_tag(:cliente, :method => :put) do %>
 		<fieldset id="" class="">
 		
 				<label> Nome: <%=h text_field :cliente, :nome  %> </label>	
