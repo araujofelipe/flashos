@@ -9,7 +9,7 @@ Funcionalidade: Clientes
 			Dado que estou na pagina de Clientes
 			E clico em "Novo Cliente"
 			E preencho o campo "cliente[nome]" com "fulano de tal"
-			E preencho o campo "cliente[cpf]" com "02569587184"
+			E preencho o campo "cliente[cpf]" com "12345678"
 			E preencho o campo "cliente[email]" com "fulano@detal.com"
 			E preencho o campo "telefone[numero]" com "(55)5555-5555"
 			E preencho o campo "endereco[logradouro]" com "rua 4 numero 56"
